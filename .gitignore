@@ -1,4 +1,4 @@
 .idea
 Tetris.sln.DotSettings.user
-TetrisLogic\bin
-TetrisLogic\obj
+/TetrisLogic/obj/
+/TetrisLogic/bin/
