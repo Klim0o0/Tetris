@@ -1,3 +1,5 @@
+using TetrisLogic.SimpleRuls;
+
 namespace TetrisLogic
 {
     public interface IGame
@@ -5,13 +7,13 @@ namespace TetrisLogic
         int Width { get; }
         int Height { get; }
         int Score { get; }
-        
-        void GameStep();
+
+        bool GameStep();
+        Block[] GetCurrentBlock();
         void MoveLeft();
         void MoveRight();
         void Rotate(bool direction);
         void ChangeSpeed();
         BlockColor[,] GetBlocks();
-        
     }
 }

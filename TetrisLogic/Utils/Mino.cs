@@ -18,7 +18,14 @@ namespace TetrisLogic
 
         public Mino Rotate()
         {
-            throw new NotImplementedException();
+            //не работает
+            var centerBlock = Blocks[center];
+            return new Mino(Blocks.Where((x, i) => i != center)
+                    .Select(block => new Block(
+                        centerBlock.X + centerBlock.Y - block.Y,
+                        block.Y + centerBlock.X - centerBlock.Y,
+                        block.Color)).Append(centerBlock).ToArray(),
+                center);
         }
 
         public Mino MoveLeft()

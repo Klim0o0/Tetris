@@ -11,42 +11,55 @@ namespace TetrisLogic.SimpleRuls
 
         private Mino mino;
         private BlockColor[,] stateBlocks;
-        private int stepCount;
         private IMinoFactory minoFactory;
 
-        public Game(IMinoFactory minoFactory, int width, int height, int stepCount)
+        public Game(IMinoFactory minoFactory, int width, int height)
         {
             this.minoFactory = minoFactory;
             Width = width;
             Height = height;
-            this.stepCount = stepCount;
             stateBlocks = new BlockColor[width, height];
         }
 
-        public void GameStep()
+        public bool GameStep()
         {
-            mino ??= minoFactory.CreateMino(new Random());
-
-            for (var i = 0; i < stepCount; i++)
+            if (mino == null)
             {
-                var tempMino = mino.MoveDown();
-                if (!IsCorrectPosition(tempMino.Blocks))
-                {
-                    foreach (var block in mino.Blocks)
-                    {
-                        stateBlocks[block.X, block.Y] = block.Color;
-                    }
+                mino = minoFactory.CreateMino(new Random());
+                return IsCorrectPosition(mino.Blocks);
+            }
 
-                    mino = null;
-                    return;
-                }
 
-                mino = tempMino;
+            var tempMino = mino.MoveDown();
+            if (!IsCorrectPosition(tempMino.Blocks))
+            {
+                FillStateMino(mino.Blocks);
+                mino = null;
+                return true;
+            }
+
+            mino = tempMino;
+            return true;
+        }
+
+        public Block[] GetCurrentBlock()
+        {
+            return mino != null ? mino.Blocks : Array.Empty<Block>();
+        }
+
+        private void FillStateMino(Block[] blocks)
+        {
+            foreach (var block in blocks)
+            {
+                stateBlocks[block.X, block.Y] = block.Color;
             }
         }
 
+
         public void MoveLeft()
         {
+            if (mino == null)
+                return;
             var tempMino = mino.MoveLeft();
             if (IsCorrectPosition(tempMino.Blocks))
                 mino = tempMino;
@@ -54,6 +67,8 @@ namespace TetrisLogic.SimpleRuls
 
         public void MoveRight()
         {
+            if (mino == null)
+                return;
             var tempMino = mino.MoveRight();
             if (IsCorrectPosition(tempMino.Blocks))
                 mino = tempMino;
@@ -62,6 +77,8 @@ namespace TetrisLogic.SimpleRuls
 
         public void Rotate(bool direction)
         {
+            if (mino == null)
+                return;
             var tempMino = mino.Rotate();
             if (IsCorrectPosition(tempMino.Blocks))
                 mino = tempMino;
