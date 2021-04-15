@@ -7,9 +7,11 @@ namespace TetrisLogic
         int Width { get; }
         int Height { get; }
         int Score { get; }
+        
+        bool IsCompleted { get; }
 
-        bool GameStep();
-        Block[] GetCurrentBlock();
+        void UpdateState();
+        Block[] GetNextBlock();
         void MoveLeft();
         void MoveRight();
         void Rotate();
