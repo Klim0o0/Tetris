@@ -8,6 +8,7 @@ namespace TetrisLogic.SimpleRuls
         public int Width { get; }
         public int Height { get; }
         public int Score { get; } = 0;
+        public bool IsCompleted { get; private set; } = false;
 
         private Mino mino;
         private BlockColor[,] stateBlocks;
@@ -21,12 +22,13 @@ namespace TetrisLogic.SimpleRuls
             stateBlocks = new BlockColor[width, height];
         }
 
-        public bool GameStep()
+        public void UpdateState()
         {
             if (mino == null)
             {
                 mino = minoFactory.CreateMino(new Random());
-                return IsCorrectPosition(mino.Blocks);
+                IsCompleted = !IsCorrectPosition(mino.Blocks);
+                return;
             }
 
 
@@ -35,17 +37,17 @@ namespace TetrisLogic.SimpleRuls
             {
                 FillStateMino(mino.Blocks);
                 mino = null;
-                return true;
+                return;
             }
 
             mino = tempMino;
-            return true;
         }
 
-        public Block[] GetCurrentBlock()
+        public Block[] GetNextBlock()
         {
-            return mino != null ? mino.Blocks : Array.Empty<Block>();
+            throw new NotImplementedException();
         }
+
 
         private void FillStateMino(Block[] blocks)
         {
@@ -91,7 +93,22 @@ namespace TetrisLogic.SimpleRuls
 
         public BlockColor[,] GetBlocks()
         {
-            return (BlockColor[,]) stateBlocks.Clone();
+            var t = new BlockColor[Width, Height];
+            for (var i = 0; i < Width; i++)
+            {
+                for (var j = 0; j < Height; j++)
+                {
+                    t[i, j] = stateBlocks[i, j];
+                }
+            }
+
+            if (mino == null) return t;
+
+            foreach (var block in mino.Blocks)
+                t[block.X, block.Y] = block.Color;
+
+
+            return t;
         }
 
         private bool IsCorrectPosition(Block[] blocks)
