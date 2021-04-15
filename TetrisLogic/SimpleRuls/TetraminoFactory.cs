@@ -29,66 +29,66 @@ namespace TetrisLogic.SimpleRuls
 
 
         private Mino CreateI()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
 
         private Mino CreateJ()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
 
         private Mino CreateL()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
 
         private Mino CreateS()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
 
         private Mino CreateZ()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
 
         private Mino CreateO()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
-        
+            }, 2);
+
         private Mino CreateT()
-            => new Mino(new []
+            => new Mino(new[]
             {
                 new Block(0, 0, BlockColor.Yellow),
                 new Block(1, 0, BlockColor.Yellow),
                 new Block(2, 0, BlockColor.Yellow),
                 new Block(3, 0, BlockColor.Yellow)
-            },2, this);
+            }, 2);
     }
 }

@@ -7,14 +7,12 @@ namespace TetrisLogic
     public class Mino
     {
         public Block[] Blocks { get; }
-
-        private readonly IMinoFactory minoFactory;
         private readonly int center;
-        
-        public Mino(Block[] blocks, int center, IMinoFactory minoFactory)
+
+        public Mino(Block[] blocks, int center)
         {
             this.center = center;
-            this.minoFactory = minoFactory;
+
             Blocks = blocks;
         }
 
@@ -26,19 +24,19 @@ namespace TetrisLogic
         public Mino MoveLeft()
         {
             var tempBlocks = Blocks.Select(block => new Block(block.X - 1, block.Y, block.Color)).ToArray();
-            return new Mino(tempBlocks, center, minoFactory);
+            return new Mino(tempBlocks, center);
         }
 
         public Mino MoveRight()
         {
             var tempBlocks = Blocks.Select(block => new Block(block.X + 1, block.Y, block.Color)).ToArray();
-            return new Mino(tempBlocks, center, minoFactory);
+            return new Mino(tempBlocks, center);
         }
 
         public Mino MoveDown()
         {
             var tempBlocks = Blocks.Select(block => new Block(block.X, block.Y + 1, block.Color)).ToArray();
-            return new Mino(tempBlocks, center, minoFactory);
+            return new Mino(tempBlocks, center);
         }
     }
 }
