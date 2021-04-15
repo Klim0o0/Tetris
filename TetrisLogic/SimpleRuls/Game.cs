@@ -75,7 +75,7 @@ namespace TetrisLogic.SimpleRuls
         }
 
 
-        public void Rotate(bool direction)
+        public void Rotate()
         {
             if (mino == null)
                 return;

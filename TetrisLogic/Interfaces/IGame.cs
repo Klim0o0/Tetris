@@ -12,7 +12,7 @@ namespace TetrisLogic
         Block[] GetCurrentBlock();
         void MoveLeft();
         void MoveRight();
-        void Rotate(bool direction);
+        void Rotate();
         void ChangeSpeed();
         BlockColor[,] GetBlocks();
     }
