@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "EH2mphqpaWMo4+Z2AjU6OIY7kut0jf0jmfDkCn3ayQiIXWKWBBqPTDygmcX8RmugCwP8knV5xQ4wnVW3DE44LA==",
+  "success": true,
+  "projectFilePath": "D:\\Programming\\Tetris\\TetrisUI\\TetrisUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dns\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
+    "C:\\Users\\dns\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\dns\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\dns\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\dns\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\dns\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
