@@ -7,12 +7,13 @@ namespace TetrisLogic.SimpleRuls
     {
         public int Width { get; }
         public int Height { get; }
-        public int Score { get; } = 0;
+        public int Score { get; private set; } = 0;
         public bool IsCompleted { get; private set; } = false;
 
         private Mino mino;
         private BlockColor[,] stateBlocks;
         private IMinoFactory minoFactory;
+        private Mino nextBlock;
 
         public Game(IMinoFactory minoFactory, int width, int height)
         {
@@ -24,28 +25,76 @@ namespace TetrisLogic.SimpleRuls
 
         public void UpdateState()
         {
+            if (nextBlock == null)
+            {
+                nextBlock = minoFactory.CreateMino(new Random());
+            }
+
             if (mino == null)
             {
-                mino = minoFactory.CreateMino(new Random());
+                mino = nextBlock;
+                nextBlock = minoFactory.CreateMino(new Random());
                 IsCompleted = !IsCorrectPosition(mino.Blocks);
                 return;
             }
 
 
+            MoveDown();
+        }
+
+        private void MoveDown()
+        {
             var tempMino = mino.MoveDown();
             if (!IsCorrectPosition(tempMino.Blocks))
             {
                 FillStateMino(mino.Blocks);
                 mino = null;
+                TryDellLines();
                 return;
             }
 
             mino = tempMino;
         }
 
+        private void TryDellLines()
+        {
+            for (var y = Height - 1; y >= 0; y--)
+            {
+                if (IsFullLine(y))
+                {
+                    Score += Width;
+                    for (var x = 0; x < Width; x++)
+                    {
+                        stateBlocks[x, y] = BlockColor.Base;
+                    }
+
+                    for (var j = y; j >= 1; j--)
+                    {
+                        for (var x = 0; x < Width; x++)
+                        {
+                            stateBlocks[x, j] =stateBlocks[x, j-1];
+                        }
+                     
+                    }
+                }
+            }
+        }
+
+        private bool IsFullLine(int y)
+        {
+            for (var x = 0; x < Width; x++)
+            {
+                if (stateBlocks[x, y] == BlockColor.Base)
+                    return false;
+            }
+
+            return true;
+        }
+
+
         public Block[] GetNextBlock()
         {
-            throw new NotImplementedException();
+            return nextBlock == null ? new Block[] { } : nextBlock.Blocks;
         }
 
 
@@ -88,7 +137,12 @@ namespace TetrisLogic.SimpleRuls
 
         public void ChangeSpeed()
         {
-            throw new System.NotImplementedException();
+            while (true)
+            {
+                if (mino == null)
+                    return;
+                MoveDown();
+            }
         }
 
         public BlockColor[,] GetBlocks()
