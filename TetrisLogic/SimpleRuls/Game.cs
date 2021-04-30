@@ -25,10 +25,7 @@ namespace TetrisLogic.SimpleRuls
 
         public void UpdateState()
         {
-            if (nextBlock == null)
-            {
-                nextBlock = minoFactory.CreateMino(new Random());
-            }
+            nextBlock ??= minoFactory.CreateMino(new Random());
 
             if (mino == null)
             {
