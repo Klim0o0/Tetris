@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using TetrisLogic.SimpleRuls;
 
@@ -18,14 +19,20 @@ namespace TetrisLogic
 
         public Mino Rotate()
         {
-            //не работает
-            var centerBlock = Blocks[center];
-            return new Mino(Blocks.Where((x, i) => i != center)
-                    .Select(block => new Block(
-                        centerBlock.X + centerBlock.Y - block.Y,
-                        block.Y + centerBlock.X - centerBlock.Y,
-                        block.Color)).Append(centerBlock).ToArray(),
-                center);
+            if (center < 0)
+                return new Mino(Blocks.Select(x => new Block(x.X, x.Y, x.Color)).ToArray(), -1);
+
+            var centerBlock = new Block(Blocks[center].X, Blocks[center].Y, Blocks[center].Color);
+            var blocks = new List<Block>();
+
+            foreach (var block in Blocks.Where((x, i) => i != center))
+            {
+                var tempBloсk = new Block(centerBlock.X - block.X, centerBlock.Y - block.Y, block.Color);
+                blocks.Add(new Block(centerBlock.X + tempBloсk.Y, centerBlock.Y - tempBloсk.X, tempBloсk.Color));
+            }
+
+            blocks.Add(centerBlock);
+            return new Mino(blocks.ToArray(), blocks.Count - 1);
         }
 
         public Mino MoveLeft()
