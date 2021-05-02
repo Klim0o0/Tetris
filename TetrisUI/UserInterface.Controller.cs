@@ -1,18 +1,11 @@
 ﻿using SFML.Graphics;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TetrisLogic;
 using static SFML.Window.Keyboard;
 
 namespace TetrisUI
 {
-    public enum KeyEventType
-    {
-        Pressed, Realesed
-    }
+    
 
     public partial class UserInterface : Transformable, Drawable
     {

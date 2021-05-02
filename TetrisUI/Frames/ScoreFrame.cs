@@ -9,9 +9,9 @@ namespace TetrisUI.Frames
         private Text text;
         private readonly Vector2f _setoff;
 
-        public ScoreFrame( Vector2f setoff)
+        public ScoreFrame()
         {
-            _setoff = setoff;
+            //_setoff = setoff;
             FillShape = new(new Vector2f(4 * UIConsts.CellLength, UIConsts.CellLength));
             FillShape.FillColor = Color.White;
             FillShape.Position = new(setoff.X * UIConsts.CellLength, setoff.Y * UIConsts.CellLength);

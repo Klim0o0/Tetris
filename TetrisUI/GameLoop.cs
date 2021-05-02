@@ -1,7 +1,6 @@
 ﻿using SFML.Graphics;
 using SFML.Window;
 using System;
-using TetrisLogic;
 using Color = SFML.Graphics.Color;
 
 namespace TetrisUI
@@ -9,16 +8,16 @@ namespace TetrisUI
     public class GameLoop
     {
         public readonly RenderWindow _window;
-        private readonly IGame _game;
+        //private readonly IGame _game;
         private readonly UserInterface _ui;
 
         private int TickDelay = 30;
         private int TickCounter;
 
-        public GameLoop(IGame game, UserInterface ui)
+        public GameLoop(UserInterface ui)
         {
             _ui = ui;
-            _game = game;
+            //_game = game;
             var w = (7 + game.Width) * UIConsts.CellLength;
             var h = (game.Height > 10 ? game.Height + 1 : 10) * UIConsts.CellLength;
             _window = new RenderWindow(new VideoMode((uint)w, (uint)h), "Test");
@@ -32,7 +31,7 @@ namespace TetrisUI
         {
             while (_window.IsOpen)
             {
-                if (_game == null) continue;
+                //if (_game == null) continue;
                 GC.Collect();
                 _window.DispatchEvents();
                 _window.Clear(Color.Black);
