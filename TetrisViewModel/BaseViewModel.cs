@@ -8,7 +8,7 @@ namespace TetrisViewModel
 {
     public enum KeybordKey
     {
-        A, B, C, D, Space
+        A, W, S, D, Space
     }
 
     public enum MouseKey

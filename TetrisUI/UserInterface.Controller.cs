@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using static SFML.Window.Keyboard;
+using TetrisViewModel;
 
 namespace TetrisUI
 {
@@ -9,25 +10,18 @@ namespace TetrisUI
 
     public partial class UserInterface : Transformable, Drawable
     {
-        private readonly List<Action<IGame>> UserActions = new();
+        private readonly List<KeyEvent> UserKeyEvents = new();
 
         public void AddUserAction(Key key, KeyEventType keyEventType)
         {
-            if (keyEventType == KeyEventType.Realesed && key == Key.S) UserActions.Add(g => g.ChangeSpeed());
-            if (keyEventType == KeyEventType.Pressed)
-            {
-                if (key == Key.A) UserActions.Add(g => g.MoveLeft());
-                if (key == Key.D) UserActions.Add(g => g.MoveRight());
-                if (key == Key.S) UserActions.Add(g => g.ChangeSpeed());
-                if (key == Key.Space) UserActions.Add(g => g.Rotate());
-            }
+            UserKeyEvents.Add(new(UIConsts.KeysByKeys[key], keyEventType));
         }
 
         public void Flush()
         {
-            foreach (var action in UserActions)
-                action(_game);
-            UserActions.Clear();
+            var ua = new UserAction(UserKeyEvents.ToArray(), Array.Empty<MouseEvent>());
+            _viewModel.Update(ua);
+            UserKeyEvents.Clear();
         }
     }
 }

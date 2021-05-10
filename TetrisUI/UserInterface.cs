@@ -1,33 +1,24 @@
 ﻿using SFML.Graphics;
+using SFML.System;
 using System;
-using TetrisUI.Frames;
+using TetrisViewModel;
 
 namespace TetrisUI
 {
     public partial class UserInterface : Transformable, Drawable
     {
-        //private readonly IGame _game;
-        private readonly FieldFrame fieldFrame;
-        private readonly ScoreFrame scoreFrame;
-        private readonly MinoViewerFrame minoViewerFrame;
+        private readonly BaseViewModel _viewModel;
+        public Vector2f Size { get; init; }
 
-        public UserInterface()
+        public UserInterface(BaseViewModel baseViewModel, Vector2f size)
         {
-            //_game = game;
-            //fieldFrame = new(game, new(1, 1));
-            //scoreFrame = new(new(game.Width + 2, 2));
-            //minoViewerFrame = new(new(game.Width, game.Height - 4));
-            fieldFrame = new();
-            scoreFrame = new();
-            minoViewerFrame = new();
+            Size = size;
+            _viewModel = baseViewModel;
         }
 
         public void Update()
         {
             Flush();
-            fieldFrame.Update();
-            scoreFrame.Update();
-            minoViewerFrame.Update();
         }
     }
 }

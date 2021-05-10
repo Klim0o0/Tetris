@@ -1,6 +1,7 @@
 ﻿using SFML.Graphics;
 using SFML.Window;
 using System;
+using TetrisViewModel;
 using Color = SFML.Graphics.Color;
 
 namespace TetrisUI
@@ -17,10 +18,7 @@ namespace TetrisUI
         public GameLoop(UserInterface ui)
         {
             _ui = ui;
-            //_game = game;
-            var w = (7 + game.Width) * UIConsts.CellLength;
-            var h = (game.Height > 10 ? game.Height + 1 : 10) * UIConsts.CellLength;
-            _window = new RenderWindow(new VideoMode((uint)w, (uint)h), "Test");
+            _window = new RenderWindow(new VideoMode((uint)_ui.Size.X, (uint)_ui.Size.Y), "Test");
             _window.SetVerticalSyncEnabled(true);
             _window.Closed += GWindow_Closed;
             _window.KeyPressed += KeyPressed;
@@ -50,7 +48,7 @@ namespace TetrisUI
         {
             if (TickCounter++ >= TickDelay)
             {
-                _game.UpdateState();
+                _ui.Update();
                 TickCounter = 0;
             }
         }
