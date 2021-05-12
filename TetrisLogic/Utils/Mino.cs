@@ -2,55 +2,63 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TetrisLogic.SimpleRuls;
+using TetrisLogic.Utils;
 
 namespace TetrisLogic
 {
     public class Mino
     {
-        public Block[] Blocks { get; }
+        public AbstractBlock[] Blocks { get; }
         private readonly int center;
 
-        public Mino(Block[] blocks, int center)
+        public Mino(AbstractBlock[] blocks, int center)
         {
+            foreach (var block in blocks)
+            {
+                block.Blocks = blocks.Where(b => b != block).ToArray();
+            }
+
             this.center = center;
 
             Blocks = blocks;
         }
 
-        public Mino Rotate()
+        public void Rotate()
         {
             if (center < 0)
-                return new Mino(Blocks.Select(x => new Block(x.X, x.Y, x.Color)).ToArray(), -1);
-
-            var centerBlock = new Block(Blocks[center].X, Blocks[center].Y, Blocks[center].Color);
-            var blocks = new List<Block>();
+                return;
 
             foreach (var block in Blocks.Where((x, i) => i != center))
             {
-                var tempBloсk = new Block(centerBlock.X - block.X, centerBlock.Y - block.Y, block.Color);
-                blocks.Add(new Block(centerBlock.X + tempBloсk.Y, centerBlock.Y - tempBloсk.X, tempBloсk.Color));
+                var x = Blocks[center].X + Blocks[center].Y - block.Y;
+                var y = Blocks[center].Y - (Blocks[center].X - block.X);
+                block.X = x;
+                block.Y = y;
             }
-
-            blocks.Add(centerBlock);
-            return new Mino(blocks.ToArray(), blocks.Count - 1);
         }
 
-        public Mino MoveLeft()
+        public void MoveLeft()
         {
-            var tempBlocks = Blocks.Select(block => new Block(block.X - 1, block.Y, block.Color)).ToArray();
-            return new Mino(tempBlocks, center);
+            foreach (var block in Blocks)
+            {
+                block.X--;
+            }
         }
 
-        public Mino MoveRight()
+        public void MoveRight()
         {
-            var tempBlocks = Blocks.Select(block => new Block(block.X + 1, block.Y, block.Color)).ToArray();
-            return new Mino(tempBlocks, center);
+            foreach (var block in Blocks)
+            {
+                block.X++;
+            }
         }
 
-        public Mino MoveDown()
+        public void MoveDown()
         {
-            var tempBlocks = Blocks.Select(block => new Block(block.X, block.Y + 1, block.Color)).ToArray();
-            return new Mino(tempBlocks, center);
+            foreach (var block in Blocks)
+            {
+                block.Y++;
+            }
         }
     }
 }
