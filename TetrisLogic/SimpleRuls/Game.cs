@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using System.Linq;
 using TetrisLogic.Utils;
 
@@ -160,6 +161,8 @@ namespace TetrisLogic.SimpleRuls
 
             return t;
         }
+
+        public Point[] GetDeletedBlocks { get; }
 
         private bool IsCorrectPosition(AbstractBlock[] blocks)
         {
