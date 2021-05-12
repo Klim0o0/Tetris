@@ -1,5 +1,7 @@
 using System;
+using System.Drawing;
 using System.Linq;
+using TetrisLogic.Utils;
 
 namespace TetrisLogic.SimpleRuls
 {
@@ -41,16 +43,11 @@ namespace TetrisLogic.SimpleRuls
 
         private void MoveDown()
         {
-            var tempMino = mino.MoveDown();
-            if (!IsCorrectPosition(tempMino.Blocks))
-            {
-                FillStateMino(mino.Blocks);
-                mino = null;
-                TryDellLines();
-                return;
-            }
-
-            mino = tempMino;
+            mino.MoveDown();
+            if (IsCorrectPosition(mino.Blocks)) return;
+            FillStateMino(mino.Blocks);
+            mino = null;
+            TryDellLines();
         }
 
         private void TryDellLines()
@@ -69,9 +66,8 @@ namespace TetrisLogic.SimpleRuls
                     {
                         for (var x = 0; x < Width; x++)
                         {
-                            stateBlocks[x, j] =stateBlocks[x, j-1];
+                            stateBlocks[x, j] = stateBlocks[x, j - 1];
                         }
-                     
                     }
                 }
             }
@@ -89,13 +85,13 @@ namespace TetrisLogic.SimpleRuls
         }
 
 
-        public Block[] GetNextBlock()
+        public AbstractBlock[] GetNextBlock()
         {
-            return nextBlock == null ? new Block[] { } : nextBlock.Blocks;
+            return nextBlock == null ? new AbstractBlock[] { } : nextBlock.Blocks;
         }
 
 
-        private void FillStateMino(Block[] blocks)
+        private void FillStateMino(AbstractBlock[] blocks)
         {
             foreach (var block in blocks)
             {
@@ -108,18 +104,18 @@ namespace TetrisLogic.SimpleRuls
         {
             if (mino == null)
                 return;
-            var tempMino = mino.MoveLeft();
-            if (IsCorrectPosition(tempMino.Blocks))
-                mino = tempMino;
+            mino.MoveLeft();
+            if (!IsCorrectPosition(mino.Blocks))
+                mino.MoveRight();
         }
 
         public void MoveRight()
         {
             if (mino == null)
                 return;
-            var tempMino = mino.MoveRight();
-            if (IsCorrectPosition(tempMino.Blocks))
-                mino = tempMino;
+            mino.MoveRight();
+            if (!IsCorrectPosition(mino.Blocks))
+                mino.MoveLeft();
         }
 
 
@@ -127,9 +123,13 @@ namespace TetrisLogic.SimpleRuls
         {
             if (mino == null)
                 return;
-            var tempMino = mino.Rotate();
-            if (IsCorrectPosition(tempMino.Blocks))
-                mino = tempMino;
+            mino.Rotate();
+            if (!IsCorrectPosition(mino.Blocks))
+            {
+                mino.Rotate();
+                mino.Rotate();
+                mino.Rotate();
+            }
         }
 
         public void ChangeSpeed()
@@ -162,7 +162,9 @@ namespace TetrisLogic.SimpleRuls
             return t;
         }
 
-        private bool IsCorrectPosition(Block[] blocks)
+        public Point[] GetDeletedBlocks { get; }
+
+        private bool IsCorrectPosition(AbstractBlock[] blocks)
         {
             return blocks.All(block => block.X < Width && block.X >= 0 &&
                                        block.Y < Height && block.Y >= 0 &&

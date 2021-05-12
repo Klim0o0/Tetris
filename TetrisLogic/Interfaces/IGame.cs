@@ -1,4 +1,6 @@
+using System.Drawing;
 using TetrisLogic.SimpleRuls;
+using TetrisLogic.Utils;
 
 namespace TetrisLogic
 {
@@ -7,15 +9,17 @@ namespace TetrisLogic
         int Width { get; }
         int Height { get; }
         int Score { get; }
-        
+
         bool IsCompleted { get; }
 
         void UpdateState();
-        Block[] GetNextBlock();
+        AbstractBlock[] GetNextBlock();
         void MoveLeft();
         void MoveRight();
         void Rotate();
         void ChangeSpeed();
         BlockColor[,] GetBlocks();
+
+        Point[] GetDeletedBlocks { get; }
     }
 }
