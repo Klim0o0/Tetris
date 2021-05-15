@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {}
+    "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {}
   },
   "projects": {
-    "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
+    "D:\\Programming\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
+        "projectUniqueName": "D:\\Programming\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
         "projectName": "TetrisLogic",
-        "projectPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\obj\\",
+        "projectPath": "D:\\Programming\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
+        "packagesPath": "C:\\Users\\dns\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Tetris\\TetrisLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -62,22 +61,21 @@
         }
       }
     },
-    "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
+    "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
+        "projectUniqueName": "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
         "projectName": "TetrisViewModel",
-        "projectPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\obj\\",
+        "projectPath": "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
+        "packagesPath": "C:\\Users\\dns\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Tetris\\TetrisViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -90,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
-                "projectPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj"
+              "D:\\Programming\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
+                "projectPath": "D:\\Programming\\Tetris\\TetrisLogic\\TetrisLogic.csproj"
               }
             }
           }

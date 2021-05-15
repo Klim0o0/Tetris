@@ -10,7 +10,7 @@ namespace TetrisUI
 
         public void Draw(RenderTarget target, RenderStates states)
         {
-            foreach (var ((x, y), (w, h), (r, g, b, a), rotate, text) in _viewModel.GetDrawInfo())
+            foreach (var ((x, y), (w, h), (r, g, b, a), rotate, text, nested) in _viewModel.GetDrawInfo())
             {
                 var pos = new Vector2f((float)x * Size.X / 100f, (float)y * Size.Y / 100f);
                 var size = new Vector2f((float)w * Size.X / 100f, (float)h * Size.Y / 100f);

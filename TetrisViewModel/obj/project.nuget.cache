@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5OS3Efvnzq8ecgchV41OlEu9lV09a8MMSFYc+2ywv0dlNCZBCDGCllPXWN+tpOxA+/Mivc/liTEzkgqoTT6+NA==",
+  "dgSpecHash": "fpN78W9QL47PYpBtzao0+eXABYqGzaVzv2FEWejPsaV27Vt5i70mRl/Oin5cEV5nVedsJhz0dnZpg3t3SHfCqg==",
   "success": true,
-  "projectFilePath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
+  "projectFilePath": "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
