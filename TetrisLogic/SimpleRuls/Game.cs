@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace TetrisLogic.SimpleRuls
@@ -12,6 +14,7 @@ namespace TetrisLogic.SimpleRuls
 
         private Mino mino;
         private BlockColor[,] stateBlocks;
+        private Block[,] blocks;    //add
         private IMinoFactory minoFactory;
         private Mino nextBlock;
 
@@ -21,6 +24,7 @@ namespace TetrisLogic.SimpleRuls
             Width = width;
             Height = height;
             stateBlocks = new BlockColor[width, height];
+            blocks = new Block[width, height]; 
         }
 
         public void UpdateState()
@@ -63,6 +67,7 @@ namespace TetrisLogic.SimpleRuls
                     for (var x = 0; x < Width; x++)
                     {
                         stateBlocks[x, y] = BlockColor.Base;
+                        blocks[x, y] = new Block(blocks[x, y].X, blocks[x, y].Y, BlockColor.Base);
                     }
 
                     for (var j = y; j >= 1; j--)
@@ -70,6 +75,7 @@ namespace TetrisLogic.SimpleRuls
                         for (var x = 0; x < Width; x++)
                         {
                             stateBlocks[x, j] =stateBlocks[x, j-1];
+                            blocks[x, j] = blocks[x, j-1]; 
                         }
                      
                     }
@@ -100,6 +106,7 @@ namespace TetrisLogic.SimpleRuls
             foreach (var block in blocks)
             {
                 stateBlocks[block.X, block.Y] = block.Color;
+                this.blocks[block.X, block.Y] = block;
             }
         }
 
@@ -160,6 +167,13 @@ namespace TetrisLogic.SimpleRuls
 
 
             return t;
+        }
+
+        public IEnumerable<Block> GetActiveBlocks() // add
+        {
+            for (var i = 0; i < Width; i++)
+                for (var j = 0; j < Height; j++)
+                    yield return blocks[i, j];
         }
 
         private bool IsCorrectPosition(Block[] blocks)

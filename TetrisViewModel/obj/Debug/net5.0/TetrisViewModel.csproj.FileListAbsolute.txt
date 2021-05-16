@@ -1,0 +1,15 @@
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\TetrisViewModel.deps.json
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\TetrisViewModel.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\ref\TetrisViewModel.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\TetrisViewModel.pdb
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\TetrisLogic.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\bin\Debug\net5.0\TetrisLogic.pdb
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.csprojAssemblyReference.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.AssemblyInfoInputs.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.AssemblyInfo.cs
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.csproj.CoreCompileInputs.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.csproj.CopyComplete
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\ref\TetrisViewModel.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisViewModel\obj\Debug\net5.0\TetrisViewModel.pdb

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TetrisLogic.SimpleRuls;
 
 namespace TetrisLogic
@@ -17,5 +18,6 @@ namespace TetrisLogic
         void Rotate();
         void ChangeSpeed();
         BlockColor[,] GetBlocks();
+        IEnumerable<Block> GetActiveBlocks();
     }
 }

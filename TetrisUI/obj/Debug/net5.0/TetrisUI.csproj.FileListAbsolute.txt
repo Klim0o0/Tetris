@@ -79,3 +79,11 @@ D:\Programming\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.dll
 D:\Programming\Tetris\TetrisUI\obj\Debug\net5.0\ref\TetrisUI.dll
 D:\Programming\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.pdb
 D:\Programming\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.genruntimeconfig.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.csprojAssemblyReference.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.AssemblyInfoInputs.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.AssemblyInfo.cs
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.csproj.CoreCompileInputs.cache
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\ref\TetrisUI.dll
+D:\Моя папка\Кирилл\Проекты C#\Проект\Tetris\TetrisUI\obj\Debug\net5.0\TetrisUI.pdb

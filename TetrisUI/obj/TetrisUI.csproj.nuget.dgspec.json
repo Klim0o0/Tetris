@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj": {}
+    "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\TetrisUI.csproj": {}
   },
   "projects": {
-    "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
+    "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
+        "projectUniqueName": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
         "projectName": "TetrisLogic",
-        "projectPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\obj\\",
+        "projectPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\TetrisLogic.csproj",
+        "packagesPath": "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\",
+        "outputPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Кирилл Кравченя\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,40 +52,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj": {
+    "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\TetrisUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj",
+        "projectUniqueName": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\TetrisUI.csproj",
         "projectName": "TetrisUI",
-        "projectPath": "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "F:\\MyProgProject\\Tetris\\TetrisUI\\obj\\",
+        "projectPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\TetrisUI.csproj",
+        "packagesPath": "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\",
+        "outputPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Кирилл Кравченя\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
-                "projectPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj"
+              "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
+                "projectPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj"
               }
             }
           }
@@ -126,40 +114,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
+    "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
+        "projectUniqueName": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
         "projectName": "TetrisViewModel",
-        "projectPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\obj\\",
+        "projectPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj",
+        "packagesPath": "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\",
+        "outputPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisViewModel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Кирилл Кравченя\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
-                "projectPath": "F:\\MyProgProject\\Tetris\\TetrisLogic\\TetrisLogic.csproj"
+              "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\TetrisLogic.csproj": {
+                "projectPath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisLogic\\TetrisLogic.csproj"
               }
             }
           }
@@ -188,7 +170,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

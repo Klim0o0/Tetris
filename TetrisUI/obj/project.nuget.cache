@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "V4/52SCTDChJhsF3tO8KGWut1a/YbIqr6zc0zc/ewM/nc0aGub91mH9XsghIHPUelK9DZWf1nD+S/9n05vj4vg==",
+  "dgSpecHash": "8VXNZcgRruPWP+DRegEtL7qDsllP2tkIMAVMXCWBuBip61c4Uuwnr/SFZNB/LgX1jZIfwFaf57O3voRfIZ/7Yg==",
   "success": true,
-  "projectFilePath": "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj",
+  "projectFilePath": "D:\\Моя папка\\Кирилл\\Проекты C#\\Проект\\Tetris\\TetrisUI\\TetrisUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Maxim\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
-    "C:\\Users\\Maxim\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
-    "C:\\Users\\Maxim\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
-    "C:\\Users\\Maxim\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
-    "C:\\Users\\Maxim\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
-    "C:\\Users\\Maxim\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\Кирилл Кравченя\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
   ],
   "logs": []
 }
