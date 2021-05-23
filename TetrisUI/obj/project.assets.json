@@ -478,24 +478,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dns\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Maxim\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Tetris\\TetrisUI\\TetrisUI.csproj",
+      "projectUniqueName": "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj",
       "projectName": "TetrisUI",
-      "projectPath": "D:\\Programming\\Tetris\\TetrisUI\\TetrisUI.csproj",
-      "packagesPath": "C:\\Users\\dns\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Tetris\\TetrisUI\\obj\\",
+      "projectPath": "F:\\MyProgProject\\Tetris\\TetrisUI\\TetrisUI.csproj",
+      "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+      "outputPath": "F:\\MyProgProject\\Tetris\\TetrisUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\dns\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -508,8 +509,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
-              "projectPath": "D:\\Programming\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj"
+            "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj": {
+              "projectPath": "F:\\MyProgProject\\Tetris\\TetrisViewModel\\TetrisViewModel.csproj"
             }
           }
         }
